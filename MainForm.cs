@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
-namespace CMIS214Ass4A
+namespace SkiPolersSkiShop
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         String strProductName;
         double dblWholesalePrice;
         int intQuantityOnHand;
     
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             SwitchButtons(false);
@@ -52,14 +52,14 @@ namespace CMIS214Ass4A
             btnProfit.Enabled = swap;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnUpdateWholeSale_click(object sender, EventArgs e)
         {
             dblWholesalePrice = double.Parse(Interaction.InputBox("Enter the wholesale price."));
             product.UpdatePrice(dblWholesalePrice);
             lblRetailPrice.Text = product.RetailPrice.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnStandardSki_click(object sender, EventArgs e)
         {
             StandardSki standardSki;
             InputInventory();
@@ -91,9 +91,5 @@ namespace CMIS214Ass4A
             lblInventory.Text = product.QuantityOnHand.ToString();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

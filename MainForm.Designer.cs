@@ -4,9 +4,9 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace CMIS214Ass4A
+namespace SkiPolersSkiShop
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -113,7 +113,7 @@ namespace CMIS214Ass4A
             this.btnCreateStandardSki.TabIndex = 5;
             this.btnCreateStandardSki.Text = "Create Standard Ski";
             this.btnCreateStandardSki.UseVisualStyleBackColor = true;
-            this.btnCreateStandardSki.Click += new System.EventHandler(this.button2_Click);
+            this.btnCreateStandardSki.Click += new System.EventHandler(this.btnStandardSki_click);
             // 
             // btnSale
             // 
@@ -149,7 +149,7 @@ namespace CMIS214Ass4A
             this.btnUpdatePrice.TabIndex = 8;
             this.btnUpdatePrice.Text = "Update Price";
             this.btnUpdatePrice.UseVisualStyleBackColor = true;
-            this.btnUpdatePrice.Click += new System.EventHandler(this.button5_Click);
+            this.btnUpdatePrice.Click += new System.EventHandler(this.btnUpdateWholeSale_click);
             // 
             // btnProfit
             // 
@@ -172,7 +172,6 @@ namespace CMIS214Ass4A
             this.txtRetailPrice.Size = new System.Drawing.Size(266, 51);
             this.txtRetailPrice.TabIndex = 10;
             this.txtRetailPrice.Text = "Retail Price: ";
-            this.txtRetailPrice.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtProductNumber
             // 

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace CMIS214Ass4A
+namespace SkiPolersSkiShop
 {
     class StandardSki : Product
     {

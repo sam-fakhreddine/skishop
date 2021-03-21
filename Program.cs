@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CMIS214Ass4A
+namespace SkiPolersSkiShop
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace CMIS214Ass4A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
