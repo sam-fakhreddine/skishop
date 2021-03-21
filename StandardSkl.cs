@@ -4,8 +4,8 @@ namespace SkiPolersSkiShop
 {
     class StandardSki : Product
     {
-        public StandardSki(string productName, int quantityOnHand, double wholesalePrice) :
-           base(productName, quantityOnHand, wholesalePrice)
+        public StandardSki(string productName, int quantityOnHand, double wholesalePrice, long productNumber) :
+           base(productName, quantityOnHand, wholesalePrice, productNumber)
         {
 
         }

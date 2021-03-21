@@ -11,21 +11,14 @@ namespace SkiPolersSkiShop
         protected double dblRetailPrice;
         protected double dblProfit;
 
-        static Product()
-        {
-            longProductNumber = 1000;
-
-        }
-        public Product(string productName, int quantityOnHand, double wholesalePrice)
+        public Product(string productName, int quantityOnHand, double wholesalePrice, long productNumber)
         {
             strProductName = productName;
-            longProductNumber++;
+            longProductNumber = productNumber;
             intQuantityOnHand = quantityOnHand;
             dblWholesalePrice = wholesalePrice;
             dblRetailPrice = UpdatePrice(wholesalePrice);
         }
-
-
 
         public long ProductNumber
         {
